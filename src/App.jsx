@@ -10,5 +10,5 @@ import FAQ from './components/FAQ'
 import Footer from './components/Footer'
 
 export default function App() {
-  return (<><a className="skip" href="#features">Skip to content</a><Navbar /><main><Hero /><Problems /><Features /><HowItWorks /><AppPreview /><DownloadSection /><Disclaimer /><FAQ /></main><Footer /></>)
+  return (<><a className="skip" href="#main-content">Skip to content</a><Navbar /><main id="main-content"><Hero /><Problems /><Features /><HowItWorks /><AppPreview /><DownloadSection /><Disclaimer /><FAQ /></main><Footer /></>)
 }

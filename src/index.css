@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html { scroll-behavior: smooth; scroll-padding-top: 76px; }
+  body { @apply bg-bg font-sans text-[1.0625rem] leading-relaxed text-ink overflow-x-hidden; }
+  h1, h2, h3 { @apply font-display tracking-tight leading-[1.1]; }
+  a:focus-visible, button:focus-visible { @apply outline outline-[3px] outline-offset-2 outline-g rounded-md; }
+}
+@layer components {
+  .wrap { @apply mx-auto w-[min(1120px,100%-2.5rem)]; }
+  .section { @apply py-16 md:py-24; }
+  .h2 { @apply font-display text-3xl font-extrabold sm:text-4xl md:text-5xl mb-4; }
+  .lead { @apply text-lg text-mu max-w-[56ch] mb-6; }
+  .btn { @apply inline-flex min-h-[52px] items-center gap-2 rounded-2xl px-6 py-3 font-semibold no-underline transition hover:-translate-y-0.5; }
+  .btn-primary { @apply bg-g text-white shadow-lg shadow-g/30 hover:bg-dg; }
+  .btn-ghost { @apply border-[1.5px] border-bd bg-white text-ink hover:border-g; }
+}
+.reveal { opacity: 0; transform: translateY(14px); transition: opacity .6s, transform .6s; }
+.reveal.in { opacity: 1; transform: none; }
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation: none !important; transition: none !important; scroll-behavior: auto !important; }
+  .reveal { opacity: 1; transform: none; }
+}

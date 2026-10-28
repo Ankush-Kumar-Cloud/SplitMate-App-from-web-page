@@ -1,50 +1,142 @@
 // Single place to change the download link.
 export const APK_URL = 'https://expo.dev/artifacts/eas/WQN5UPROVUrpGv9KXITZRQOdfsS1atQpKMB_cpBhVsY.apk'
 
-// Contact + privacy policy are placeholders: fill in before public launch.
-export const PRIVACY_URL = '' // e.g. '/privacy.html'
-export const CONTACT_EMAIL = '' // e.g. 'hello@yourdomain.com'
-
+// Developer Support Contacts
 export const DEVELOPER = 'Ankush Kumar'
-export const nav = [['Home', '#home'], ['Features', '#features'], ['How It Works', '#how'], ['FAQ', '#faq']]
+export const CONTACT_EMAIL = 'ankushkumary77@gmail.com'
+export const CONTACT_WHATSAPP = '6203808087'
+export const WHATSAPP_LINK = 'https://wa.me/916203808087?text=Hello%20SplitMate%2C%20I%20need%20help%20with%20the%20app'
+export const PRIVACY_URL = '' // e.g. '/privacy.html'
 
-export const problems = [
-  ['Who paid for what?', 'Shared bills get paid by whoever is closest to the counter, and nobody remembers later.'],
-  ['Rent, groceries, household', 'Recurring shared costs are easy to lose track of across several people.'],
-  ['Group trips', 'Fuel, stays and meals add up fast when everyone takes a turn paying.'],
-  ['Manual maths', 'Calculator splits and notes-app lists lead to forgotten amounts.'],
-  ['Multiple payers', 'When several people pay, working out the balance by hand gets messy.'],
+export const nav = [
+  ['Home', '#home'],
+  ['Problems Solved', '#problems'],
+  ['Screenshots', '#screens'],
+  ['Features', '#features'],
+  ['How to Use', '#how'],
+  ['Help & Support', '#support'],
+  ['FAQ', '#faq'],
 ]
 
-// Based on the app screenshots (Expenses, Settlement) plus the original brief (login/registration).
-// QR scanning is intentionally omitted until verified.
+export const problems = [
+  [
+    'Who paid for what?',
+    'One friend buys sabzi, another pays for the gas cylinder, and a third buys milk. After a few days, nobody remembers who spent how much.',
+  ],
+  [
+    'Lost paper diary or WhatsApp notes',
+    'Writing hisab-kitab on rough paper, diary pages, or WhatsApp messages gets lost or deleted when you need it most.',
+  ],
+  [
+    'Hesitation to ask friends for money',
+    'It feels awkward and shy to ask roommates again and again, "Bhai, kitna paisa bacha hai?" SplitMate shows the exact balance so no one feels bad.',
+  ],
+  [
+    'Calculator mistakes and arguments',
+    'Calculating total kharcha and dividing by 4 or 5 friends on a mobile calculator takes time and often creates doubts and arguments.',
+  ],
+  [
+    'Unequal spending among roommates',
+    'When one person spends ₹1,200 on groceries and another spends ₹200 on snacks, manual calculation gets confusing. SplitMate balances it automatically.',
+  ],
+]
+
 export const features = [
-  ['Receipt', 'Group expense tracking', 'Add expenses to a group such as flatmates, and edit or delete them later.'],
-  ['Users', 'Member-wise totals', 'See each member’s monthly total, today’s spending and number of entries.'],
-  ['Search', 'Search, filter and categories', 'Find expenses quickly and tag them with categories such as Food.'],
-  ['BarChart3', 'Activity, Budgets, Analytics, Monthly', 'Separate tabs inside each group to review spending in different ways.'],
-  ['Scale', 'Settlement suggestions', 'Shows the minimum payments needed to even things out, with who pays whom.'],
-  ['CheckCircle2', 'Mark Paid', 'Mark a suggested payment as paid so the group stays up to date.'],
-  ['UserCheck', 'Account registration and login', 'Create an account and sign in.'],
+  [
+    'QrCode',
+    'Scan QR Code or Enter 6-Digit Code',
+    'Add your roommates in seconds! Just scan the group QR code or enter the group code (like 66ZBJC) to join instantly.',
+  ],
+  [
+    'Receipt',
+    'Roz Ka Kharcha (Daily Expenses)',
+    'Add daily expenses for sabzi, ration, gas cylinder, milk, room rent, or tea in 5 seconds with the green [+] button.',
+  ],
+  [
+    'Users',
+    'Har Member Ka Hisab (Member Totals)',
+    'See clearly how much each friend has spent this month, today, and how many items they paid for.',
+  ],
+  [
+    'Scale',
+    'Automatic Equal Share Calculation',
+    'The app adds up the full group spending and tells you the exact per-person share in one second. No manual math needed.',
+  ],
+  [
+    'CheckCircle2',
+    'Who Pays Whom (Direct Settlement)',
+    'Tells you straight: "Ankush pays Naushad ₹79". Settle payments directly with minimal cash or UPI transfers.',
+  ],
+  [
+    'BarChart3',
+    'Date-Wise Activity Timeline',
+    'Check day-by-day records (Tuesday, Monday, Sunday) with date, time, and category like Food, Travel, or Room.',
+  ],
+  [
+    'Search',
+    'Easy Search and Edit / Delete',
+    'Search any expense quickly. Made a typing mistake? Easily change the amount or delete it anytime.',
+  ],
 ]
 
 export const steps = [
-  ['Download the APK', 'Tap Download APK on this page. Your browser may ask you to confirm the download.'],
-  ['Install on Android', 'Open the downloaded file. If Android asks, allow your browser or file manager to install apps from this source, then tap Install.'],
-  ['Register or sign in', 'Create an account, or sign in if you already have one.'],
-  ['Create a group', 'Set up a group for your flat, trip or friends and add its members.'],
-  ['Add expenses', 'Tap the green + button, enter the amount and pick a category.'],
-  ['Review the month', 'Check member totals on the Expenses tab, or open Analytics and Monthly.'],
-  ['Settle up', 'Open the Settlement tab to see who pays whom, and tap Mark Paid once done.'],
+  [
+    'Download the Free App',
+    'Click the "Download APK" button on this website. The file will download safely to your Android phone.',
+  ],
+  [
+    'Install on Your Phone',
+    'Open the downloaded file. If your phone asks for permission, tap "Allow from this source" and tap "Install". It takes only 10 seconds.',
+  ],
+  [
+    'Create or Join a Group',
+    'Open SplitMate, tap "+ New" to create a room group or tap "Join" with a simple 6-digit code (e.g. 66ZBJC) or scan QR.',
+  ],
+  [
+    'Enter Daily Kharcha & Settle Up',
+    'Whenever someone spends money, tap the green [+] button. At the end of the month, see who owes whom and tap "Mark Paid" when settled!',
+  ],
 ]
 
 export const faqs = [
-  ['What is SplitMate?', 'SplitMate is an Android app for tracking shared expenses and splitting them within groups. Its in-app tagline is “Split expenses. Stay even.”'],
-  ['How do I download the app?', 'Use any Download APK button on this page. The file is hosted on Expo’s artifact domain (expo.dev).'],
-  ['How do I install an APK?', 'Open the downloaded file. Android may ask you to allow installs from your browser or file manager, because the app is not from the Play Store. Allow it only if you trust this source, then tap Install. You can turn the permission off again afterwards in Settings.'],
-  ['Is SplitMate available for iPhone?', 'Only an Android APK is offered here. An iPhone version has not been announced on this site.'],
-  ['How do I create an account?', 'Open the app and choose the register option, then sign in with the details you created. Never reuse a password from another service.'],
-  ['Does SplitMate process payments?', 'This site does not claim in-app money transfers. SplitMate tracks expenses, suggests who should pay whom, and lets you tap Mark Paid to record it. The actual payment happens between you and your group members.'],
-  ['What if the APK fails to install?', 'Check that you have free storage, that the file finished downloading, and that installs from your browser or file manager are allowed. Then download it again. If it still fails, use the contact details on this site once they are added.'],
-  ['How do I receive app updates?', 'Sideloaded APKs do not update through the Play Store. Check this page for a newer APK and install it over the existing app. Automatic in-app updates are not confirmed.'],
+  [
+    'What if I face any problem or bug in the app?',
+    'You get direct personal help! If you face any problem, error, or difficulty using SplitMate, message developer Ankush Kumar directly on WhatsApp at 6203808087 or email ankushkumary77@gmail.com. We will help you immediately.',
+  ],
+  [
+    'What is SplitMate?',
+    'SplitMate is a simple and free Android app made for roommates, hostel students, and friends in India. It helps you keep track of shared daily expenses like room rent, gas cylinders, sabzi, ration, milk, and travel bills with zero confusion.',
+  ],
+  [
+    'How do my roommates join my group?',
+    'Very easy! When you create a group, you get a 6-digit code (like 66ZBJC) and a QR code. Your room partners just open the app, tap "Join", and enter the code or scan the QR. They will be added instantly!',
+  ],
+  [
+    'Is SplitMate completely free to use?',
+    'Yes, 100% free! There are no fees, no subscription plans, and no hidden charges.',
+  ],
+  [
+    'Does SplitMate cut money from my bank account?',
+    'No, never! SplitMate is a digital hisab-kitab notebook. It does NOT connect to your bank account and never cuts any money. You and your friends pay each other directly using Cash or UPI apps like PhonePe, Google Pay, or Paytm.',
+  ],
+  [
+    'How do I install the app on my Android phone?',
+    'Click the "Download APK" button above. Once downloaded, tap the file in your notification bar or Downloads folder. If your Android phone shows "Install unknown apps", simply turn on the switch for your browser and tap "Install". It is completely safe.',
+  ],
+  [
+    'Can we use it for 3, 4, or more roommates?',
+    'Yes! SplitMate works perfectly for 2 roommates, 4 room partners, 6 hostel friends, or a large group on a village or city trip. You can add as many members as you want.',
+  ],
+  [
+    'What if I enter a wrong amount by mistake?',
+    'You can fix it anytime! Every expense entry has an "Edit" button to change the amount or description, and a "Delete" button if you want to remove it.',
+  ],
+  [
+    'How does SplitMate tell who has to give money to whom?',
+    'Go to the "Monthly Summary" or "Settlement" tab in the app. It clearly shows in green (+₹) who spent more and should get money back, and in red (-₹) who needs to pay. It gives the exact minimum payment needed to even out everything.',
+  ],
+  [
+    'Does the app work on Redmi, Realme, Samsung, Vivo, and Oppo phones?',
+    'Yes, SplitMate works smoothly on all standard Android phones running Android 7.0 and above.',
+  ],
 ]

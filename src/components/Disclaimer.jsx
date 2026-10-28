@@ -1,18 +1,37 @@
-import { ShieldCheck } from 'lucide-react'
+import { ShieldCheck, Info } from 'lucide-react'
 import { PRIVACY_URL } from '../data/appContent'
 
 export default function Disclaimer() {
   return (
     <section className="section border-y border-bd bg-white" aria-labelledby="d-h">
-      <div className="wrap grid gap-10 md:grid-cols-2">
-        <div>
-          <h2 id="d-h" className="mb-3 font-display text-2xl font-extrabold">Disclaimer</h2>
-          <p>SplitMate is intended to help users organize and track shared expenses. Users should verify expense calculations and balances before settling accounts. SplitMate does not guarantee repayment by other users. The application does not itself constitute a bank, payment processor, or financial adviser. Features and availability may change between versions.</p>
+      <div className="wrap grid gap-8 md:grid-cols-2">
+        <div className="rounded-2xl border border-bd bg-bg/50 p-6">
+          <h2 id="d-h" className="mb-3 flex items-center gap-2 font-display text-xl sm:text-2xl font-extrabold text-dg">
+            <Info size={22} className="text-g shrink-0" aria-hidden="true" />
+            Important Note on Payments
+          </h2>
+          <p className="text-sm sm:text-base leading-relaxed text-gray-700">
+            SplitMate is a digital notebook to organize and record shared expenses between friends and roommates.
+            SplitMate is <strong>not a bank or payment processor</strong>, and it never connects to your bank account or cuts money.
+            You settle payments directly with your friends via <strong>Cash or your preferred UPI app</strong> (PhonePe, Google Pay, Paytm). Please verify calculations with your group members before settling.
+          </p>
         </div>
-        <div id="privacy">
-          <h2 className="mb-3 flex items-center gap-2 font-display text-2xl font-extrabold"><ShieldCheck size={22} aria-hidden="true" /> Privacy and security</h2>
-          <p className="mb-3">Never share your password with anyone, and avoid entering sensitive information that the app does not need. Use a password you do not use elsewhere.</p>
-          <p className="text-mu">{PRIVACY_URL ? <a href={PRIVACY_URL}>Privacy policy</a> : 'Privacy policy: placeholder, to be completed before public launch.'}</p>
+
+        <div id="privacy" className="rounded-2xl border border-bd bg-bg/50 p-6">
+          <h2 className="mb-3 flex items-center gap-2 font-display text-xl sm:text-2xl font-extrabold text-dg">
+            <ShieldCheck size={22} className="text-g shrink-0" aria-hidden="true" />
+            Your Privacy & Safety
+          </h2>
+          <p className="text-sm sm:text-base leading-relaxed text-gray-700 mb-3">
+            Your expense details are safe with your group. Never share your account password with anyone, and never enter sensitive information like bank passwords, ATM PINs, or OTPs. SplitMate will never ask for bank or card details.
+          </p>
+          <p className="text-xs sm:text-sm text-mu">
+            {PRIVACY_URL ? (
+              <a href={PRIVACY_URL} className="text-g font-semibold underline">Read Privacy Policy</a>
+            ) : (
+              'SplitMate respects user privacy and data security.'
+            )}
+          </p>
         </div>
       </div>
     </section>
